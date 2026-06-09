@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fotopop — Pop Your Color</title>
+<meta name="description" content="Fotopop — Vibrant self-photo booth experience in Guatemala. Pop your color." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ===== Aileron (secondary typeface) ===== */
+@font-face{font-family:'Aileron';src:url('fonts/Aileron-Regular.woff2') format('woff2');font-weight:400 700;font-display:swap}
+
+:root{
+  --pop-red:#ce1212;     /* MAIN */
+  --drama-red:#ba091c;   /* deeper red */
+  --black:#000000;       /* Lens Black */
+  --white:#ffffff;       /* Paper White */
+  --shell:#efefef;       /* Shell Grey - background */
+  --focus:#1b1717;       /* Focus Grey */
+  --blue:#0100ad;        /* Booth 02 - Blue */
+  --pink-booth:#d6117a;  /* Booth 03 - Pink */
+  --line:rgba(0,0,0,.14);
+  --head:'Archivo Black', 'Archivo', sans-serif;
+  --body:'Aileron','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--shell);color:var(--black);overflow-x:hidden;-webkit-font-smoothing:antialiased;line-height:1.5}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1280px;margin:0 auto;padding:0 28px}
+.head{font-family:var(--head);font-weight:400;line-height:.92;letter-spacing:-.01em}
+
+/* ===== LOGO (image wordmark) ===== */
+.logo{display:inline-flex;align-items:center}
+.logo img{height:26px;width:auto;display:block}
+/* nav: light logo on hero/dark, red logo when solid white */
+nav .logo .l-red{display:none}
+nav.solid .logo .l-light{display:none}
+nav.solid .logo .l-red{display:block}
+
+/* ===== NAV ===== */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;
+  padding:16px 28px;transition:.3s;background:transparent}
+nav.solid{background:var(--white);box-shadow:0 1px 0 var(--line)}
+nav .menu{display:flex;gap:28px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.12em}
+nav .menu a{position:relative;color:var(--black)}
+nav.on-red .menu a{color:var(--white)}
+nav.solid .menu a{color:var(--black)}
+nav .menu a:after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:2px;background:currentColor;transition:.3s}
+nav .menu a:hover:after{width:100%}
+@media(max-width:760px){nav .menu{display:none}}
+
+/* ===== HERO ===== */
+.hero{position:relative;height:100vh;min-height:620px;display:flex;flex-direction:column;justify-content:center;
+  background:var(--pop-red);color:var(--white);overflow:hidden}
+.hero .marquee{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;opacity:.12;pointer-events:none}
+.hero .marquee span{font-family:var(--head);font-size:17vw;line-height:.95;white-space:nowrap}
+.hero .track{display:flex;animation:slide 34s linear infinite}
+.hero .track2{animation-direction:reverse;animation-duration:44s}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.hero-content{position:relative;z-index:2;width:100%;max-width:1280px;margin:0 auto;padding:0 28px}
+.hero .kicker{font-size:13px;letter-spacing:.28em;text-transform:uppercase;font-weight:700;margin-bottom:24px;opacity:.92}
+.hero h1{font-family:var(--head);font-size:clamp(52px,11vw,168px);line-height:.86;letter-spacing:-.02em;text-transform:uppercase}
+.hero .sub{margin-top:26px;font-size:clamp(15px,1.6vw,20px);max-width:540px;font-weight:400;line-height:1.55}
+.hero .cta{margin-top:38px;display:inline-flex;align-items:center;gap:12px;background:var(--white);color:var(--pop-red);
+  padding:17px 32px;border-radius:100px;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;transition:.25s}
+.hero .cta:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(0,0,0,.28)}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;font-size:11px;letter-spacing:.25em;
+  text-transform:uppercase;color:var(--white);opacity:.85;animation:bob 1.8s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+/* ===== INTRO / MANIFESTO ===== */
+.intro{padding:120px 0}
+.intro .lab{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--pop-red);font-weight:700;margin-bottom:28px}
+.intro p{font-family:var(--body);font-size:clamp(23px,3.3vw,44px);font-weight:700;line-height:1.22;letter-spacing:-.01em;max-width:1020px}
+.intro p b{color:var(--pop-red)}
+.intro .meta{display:flex;flex-wrap:wrap;gap:48px;margin-top:64px;border-top:2px solid var(--black);padding-top:34px}
+.intro .meta div span{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#777;margin-bottom:8px;font-weight:600}
+.intro .meta div strong{font-family:var(--head);font-size:32px;letter-spacing:-.01em}
+
+/* ===== SECTION HEAD ===== */
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:16px}
+.sec-head h2{font-family:var(--head);font-size:clamp(36px,6.5vw,90px);line-height:.9;text-transform:uppercase;letter-spacing:-.02em}
+.sec-head .idx{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#888;font-weight:700}
+
+/* ===== BOOTHS ===== */
+.booths{padding:30px 0 110px}
+.booth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.booth{position:relative;border-radius:6px;overflow:hidden;color:var(--white);min-height:340px;display:flex;flex-direction:column;
+  justify-content:space-between;padding:28px;transition:transform .3s,box-shadow .3s}
+.booth:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.22)}
+.booth.red{background:var(--pop-red)}
+.booth.blue{background:var(--blue)}
+.booth.pink{background:var(--pink-booth)}
+.booth .no{font-family:var(--head);font-size:14px;letter-spacing:.1em;opacity:.85}
+.booth .bn{font-family:var(--head);font-size:clamp(34px,4vw,52px);line-height:.9;text-transform:uppercase;margin-top:auto}
+.booth .where{margin-top:14px;font-size:15px;font-weight:600;line-height:1.4;opacity:.96}
+.booth .where small{display:block;font-weight:400;opacity:.8;font-size:13px;margin-top:2px}
+@media(max-width:780px){.booth-grid{grid-template-columns:1fr}}
+
+/* ===== LOOKBOOK ===== */
+.lookbook{padding:40px 0 90px}
+.feature{display:grid;grid-template-columns:1.15fr 1fr;margin-bottom:18px;border:2px solid var(--black);background:var(--white);overflow:hidden;cursor:pointer}
+.feature.flip{grid-template-columns:1fr 1.15fr}
+.feature.flip .f-media{order:2}
+.feature .f-media{aspect-ratio:4/3;overflow:hidden}
+.feature .f-media img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.feature:hover .f-media img{transform:scale(1.05)}
+.feature .f-body{padding:clamp(28px,4vw,58px);display:flex;flex-direction:column;justify-content:center}
+.feature .f-no{font-family:var(--head);font-size:13px;letter-spacing:.1em;color:var(--pop-red);margin-bottom:18px}
+.feature .f-body h3{font-family:var(--head);font-size:clamp(24px,2.6vw,40px);line-height:1;letter-spacing:-.01em;margin-bottom:18px;text-transform:uppercase}
+.feature .f-body p{font-size:15px;line-height:1.6;color:#333;max-width:440px;
+  display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.feature .f-loc{margin-top:24px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#888;font-weight:600}
+@media(max-width:820px){.feature,.feature.flip{grid-template-columns:1fr}.feature.flip .f-media{order:0}}
+
+/* ===== FEED GRID ===== */
+.feed{padding:80px 0 100px;background:var(--black);color:var(--white);margin-top:40px}
+.feed .sec-head h2{color:var(--white)}
+.feed .ig{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--white);letter-spacing:.03em}
+.feed .ig svg{width:20px;height:20px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.grid .cell{position:relative;aspect-ratio:1;overflow:hidden;cursor:pointer;background:#222}
+.grid .cell img{transition:transform .5s}
+.grid .cell:hover img{transform:scale(1.08)}
+.grid .cell .ov{position:absolute;inset:0;background:linear-gradient(transparent 42%,rgba(0,0,0,.8));opacity:0;transition:.3s;display:flex;align-items:flex-end;padding:16px}
+.grid .cell:hover .ov{opacity:1}
+.grid .cell .ov span{font-family:var(--head);font-size:12px;line-height:1.25;text-transform:uppercase}
+.grid .cell .multi{position:absolute;top:10px;right:10px;width:18px;height:18px;opacity:.92}
+@media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ===== CONTACT ===== */
+.contact{padding:120px 0}
+.contact .lab{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--pop-red);font-weight:700;margin-bottom:28px}
+.contact .big{font-family:var(--head);font-size:clamp(48px,12vw,180px);line-height:.84;text-transform:uppercase;letter-spacing:-.03em}
+.contact .big a{color:var(--pop-red);transition:.2s}
+.contact .big a:hover{color:var(--black)}
+.contact .row{display:flex;flex-wrap:wrap;gap:56px;margin-top:60px;border-top:2px solid var(--black);padding-top:38px}
+.contact .row div span{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#888;margin-bottom:10px;font-weight:600}
+.contact .row div p{font-size:17px;font-weight:600;line-height:1.5}
+footer{background:var(--black);color:var(--white);padding:40px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+footer small{font-size:12px;color:#999;letter-spacing:.03em}
+
+/* ===== MODAL ===== */
+.modal{position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.94);display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(6px)}
+.modal.open{display:flex}
+.modal .box{background:var(--shell);max-width:1040px;width:100%;max-height:90vh;border-radius:6px;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr}
+.modal .m-media{position:relative;background:#111;display:flex;align-items:center;justify-content:center}
+.modal .m-media img{width:100%;height:100%;max-height:90vh;object-fit:contain}
+.modal .m-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.92);width:42px;height:42px;border-radius:50%;border:0;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.modal .m-nav.prev{left:14px}.modal .m-nav.next{right:14px}
+.modal .m-dots{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;gap:6px}
+.modal .m-dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.45)}
+.modal .m-dots i.on{background:var(--white)}
+.modal .m-body{padding:36px 34px;overflow-y:auto}
+.modal .m-tag{font-family:var(--head);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--pop-red);margin-bottom:14px}
+.modal .m-body h3{font-family:var(--head);font-size:26px;line-height:1;margin-bottom:18px;letter-spacing:-.01em;text-transform:uppercase}
+.modal .m-body .cap{font-size:14.5px;line-height:1.65;white-space:pre-wrap;color:#222}
+.modal .m-loc{margin-top:22px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#888;font-weight:600}
+.modal .m-close{position:absolute;top:18px;right:22px;z-index:5;color:var(--white);font-size:30px;cursor:pointer;line-height:1}
+@media(max-width:780px){.modal .box{grid-template-columns:1fr;max-height:92vh}.modal .m-media{max-height:50vh}.modal .m-media img{max-height:50vh}}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav class="on-red" id="nav">
+  <a href="#top" class="logo" aria-label="Fotopop">
+    <img class="l-light" src="images/logo-light.png" alt="Fotopop">
+    <img class="l-red" src="images/logo-red.png" alt="Fotopop">
+  </a>
+  <div class="menu">
+    <a href="#about">About</a>
+    <a href="#booths">Booths</a>
+    <a href="#work">Work</a>
+    <a href="#feed">Feed</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="marquee">
+    <div class="track"><span>POP YOUR COLOR — POP YOUR COLOR — POP YOUR COLOR — </span><span>POP YOUR COLOR — POP YOUR COLOR — POP YOUR COLOR — </span></div>
+    <div class="track track2"><span>VIBRANT · VIVID · POP · PREMIUM · CREATIVE · </span><span>VIBRANT · VIVID · POP · PREMIUM · CREATIVE · </span></div>
+  </div>
+  <div class="hero-content">
+    <div class="kicker">Self-Photo Booth · Guatemala</div>
+    <h1>Pop<br>your<br>color.</h1>
+    <p class="sub">Más que una cabina de fotos. Un universo de color vibrante. Captura tu identidad en el frame más bold de Guatemala.</p>
+    <a href="#work" class="cta">Explore the work →</a>
+  </div>
+  <div class="scroll-hint">Scroll ↓</div>
+</header>
+
+<!-- INTRO -->
+<section class="intro wrap reveal" id="about">
+  <div class="lab">[ 01 — Brand ]</div>
+  <p>Fotopop no es solo una cabina de fotos. Es un <b>statement</b>. Llevamos una cultura de self-photo booth <b>vibrante</b> a Centroamérica, empoderando a cada persona para expresar su identidad con color.</p>
+  <div class="meta">
+    <div><span>Main Color</span><strong>Pop Red</strong></div>
+    <div><span>Booths</span><strong>03</strong></div>
+    <div><span>Location</span><strong>Guatemala</strong></div>
+    <div><span>The Vibe</span><strong>Vivid</strong></div>
+  </div>
+</section>
+
+<!-- BOOTHS -->
+<section class="booths wrap" id="booths">
+  <div class="sec-head reveal">
+    <h2>Our<br>Booths</h2>
+    <div class="idx">[ 3 Locations ]</div>
+  </div>
+  <div class="booth-grid">
+    <div class="booth red reveal">
+      <div class="no">Booth 01 · Flagship</div>
+      <div>
+        <div class="bn">Red</div>
+        <div class="where">◍ Vidēre, Nivel 2<br><small>Guatemala</small></div>
+      </div>
+    </div>
+    <div class="booth blue reveal">
+      <div class="no">Booth 02</div>
+      <div>
+        <div class="bn">Blue</div>
+        <div class="where">◍ CC Tikal Futura<br><small>Guatemala</small></div>
+      </div>
+    </div>
+    <div class="booth pink reveal">
+      <div class="no">Booth 03</div>
+      <div>
+        <div class="bn">Pink</div>
+        <div class="where">◍ AVIA, Nivel 3<br><small>Guatemala</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKBOOK -->
+<section class="lookbook wrap" id="work">
+  <div class="sec-head reveal">
+    <h2>The<br>Lookbook</h2>
+    <div class="idx">[ Featured Drops ]</div>
+  </div>
+  <div id="features"></div>
+</section>
+
+<!-- FEED -->
+<section class="feed" id="feed">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>The Feed</h2>
+      <a class="ig" href="https://instagram.com/fotopop_official" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        @fotopop_official
+      </a>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact wrap" id="contact">
+  <div class="reveal">
+    <div class="lab">[ Let's pop ]</div>
+    <div class="big">POP<br>YOUR<br><a href="https://instagram.com/fotopop_official" target="_blank" rel="noopener">COLOR.</a></div>
+    <div class="row">
+      <div><span>Instagram</span><p><a href="https://instagram.com/fotopop_official" target="_blank" rel="noopener">@fotopop_official</a></p></div>
+      <div><span>Booths</span><p>Red · Blue · Pink<br>3 locations in Guatemala</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="logo"><img src="images/logo-light.png" alt="Fotopop" style="height:30px"></span>
+    <small>© 2026 Fotopop · Pop your color.</small>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <span class="m-close" id="mClose">×</span>
+  <div class="box">
+    <div class="m-media">
+      <button class="m-nav prev" id="mPrev">‹</button>
+      <img id="mImg" src="" alt="" />
+      <button class="m-nav next" id="mNext">›</button>
+      <div class="m-dots" id="mDots"></div>
+    </div>
+    <div class="m-body">
+      <div class="m-tag" id="mTag">Fotopop</div>
+      <h3 id="mTitle"></h3>
+      <div class="cap" id="mCap"></div>
+      <div class="m-loc" id="mLoc"></div>
+    </div>
+  </div>
+</div>
+
+<script src="posts-data.js"></script>
+<script>
+const POSTS = window.FOTOPOP_POSTS || [];
+const IMG = f => 'images/thumb/' + f;
+const FULL = f => 'images/' + f;
+
+// nav state
+const nav = document.getElementById('nav');
+const hero = document.getElementById('top');
+window.addEventListener('scroll', ()=>{
+  const past = window.scrollY > hero.offsetHeight - 70;
+  nav.classList.toggle('solid', past);
+  nav.classList.toggle('on-red', !past);
+});
+
+// Lookbook — curated photobooth shots (taken inside the booths, high-angle)
+const featWrap = document.getElementById('features');
+const LOOKBOOK = [
+  {cover:'18402993472154499.jpg', booth:'Pink Booth'},
+  {cover:'18094950961977219.jpg', booth:'Blue Booth'},
+  {cover:'18093968989784828.jpg', booth:'Red Booth'},
+  {cover:'17904236574361309.jpg', booth:'Red Booth'},
+  {cover:'18307085050278842.jpg', booth:'Blue Booth'},
+  {cover:'18137337175529004.jpg', booth:'Red Booth'},
+];
+const featured = LOOKBOOK
+  .map(l => {
+    const p = POSTS.find(x => x.cover === l.cover || x.images.includes(l.cover));
+    return p ? {p, cover:l.cover, booth:l.booth} : null;
+  })
+  .filter(Boolean);
+featured.forEach((f, i) => {
+  const p = f.p;
+  const el = document.createElement('div');
+  el.className = 'feature' + (i % 2 ? ' flip' : '');
+  el.innerHTML = `
+    <div class="f-media"><img loading="lazy" src="${IMG(f.cover)}" alt="${escapeAttr(p.title)}"></div>
+    <div class="f-body">
+      <div class="f-no">${escapeHtml(f.booth)} · Drop ${String(i+1).padStart(2,'0')}</div>
+      <h3>${escapeHtml(p.title)}</h3>
+      <p>${escapeHtml(p.caption.split('\n').filter(l=>l.trim()).slice(1).join(' ') || p.caption)}</p>
+      ${p.location ? `<div class="f-loc">◍ ${escapeHtml(p.location)}</div>` : ''}
+    </div>`;
+  el.addEventListener('click', () => openModal(POSTS.indexOf(p)));
+  featWrap.appendChild(el);
+});
+
+// Feed grid
+const grid = document.getElementById('grid');
+POSTS.forEach((p, idx) => {
+  const c = document.createElement('div');
+  c.className = 'cell';
+  c.innerHTML = `
+    <img loading="lazy" src="${IMG(p.cover)}" alt="${escapeAttr(p.title)}">
+    ${p.images.length > 1 ? '<svg class="multi" viewBox="0 0 24 24" fill="#fff"><path d="M7 7h11v11H7z" opacity=".55"/><path d="M4 4h11v11H4z"/></svg>' : ''}
+    <div class="ov"><span>${escapeHtml(p.title)}</span></div>`;
+  c.addEventListener('click', () => openModal(idx));
+  grid.appendChild(c);
+});
+
+// Modal
+let curPost = 0, curImg = 0;
+const modal = document.getElementById('modal');
+const mImg = document.getElementById('mImg'), mDots = document.getElementById('mDots');
+function openModal(i){
+  curPost = i; curImg = 0;
+  const p = POSTS[i];
+  document.getElementById('mTitle').textContent = p.title;
+  document.getElementById('mCap').textContent = p.caption;
+  document.getElementById('mLoc').textContent = p.location ? '◍ ' + p.location : '';
+  document.getElementById('mTag').textContent = p.tags && p.tags.length ? '#' + p.tags.slice(0,3).join('  #') : 'Fotopop';
+  renderImg();
+  modal.classList.add('open'); document.body.style.overflow = 'hidden';
+}
+function renderImg(){
+  const p = POSTS[curPost];
+  mImg.src = FULL(p.images[curImg]);
+  mDots.innerHTML = p.images.map((_,k)=>`<i class="${k===curImg?'on':''}"></i>`).join('');
+  const multi = p.images.length > 1;
+  document.getElementById('mPrev').style.display = multi?'flex':'none';
+  document.getElementById('mNext').style.display = multi?'flex':'none';
+}
+function closeModal(){ modal.classList.remove('open'); document.body.style.overflow=''; }
+document.getElementById('mClose').onclick = closeModal;
+modal.addEventListener('click', e=>{ if(e.target===modal) closeModal(); });
+document.getElementById('mNext').onclick = ()=>{ const n=POSTS[curPost].images.length; curImg=(curImg+1)%n; renderImg(); };
+document.getElementById('mPrev').onclick = ()=>{ const n=POSTS[curPost].images.length; curImg=(curImg-1+n)%n; renderImg(); };
+document.addEventListener('keydown', e=>{
+  if(!modal.classList.contains('open')) return;
+  if(e.key==='Escape') closeModal();
+  if(e.key==='ArrowRight') document.getElementById('mNext').click();
+  if(e.key==='ArrowLeft') document.getElementById('mPrev').click();
+});
+
+// Reveal
+const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal, .feature').forEach(el=>{el.classList.add('reveal');io.observe(el);});
+
+function escapeHtml(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function escapeAttr(s){return (s||'').replace(/"/g,'&quot;');}
+</script>
+</body>
+</html>
