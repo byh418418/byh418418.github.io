@@ -86,6 +86,23 @@ nav .menu a:hover:after{width:100%}
 .sec-head h2{font-family:var(--head);font-size:clamp(36px,6.5vw,90px);line-height:.9;text-transform:uppercase;letter-spacing:-.02em}
 .sec-head .idx{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#888;font-weight:700}
 
+/* ===== HISTORY / TIMELINE ===== */
+.history{padding:40px 0 100px}
+.history .lead{font-family:var(--body);font-size:clamp(18px,2.2vw,26px);font-weight:700;line-height:1.4;max-width:780px;margin-bottom:54px;color:#222}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tl{border:2px solid var(--black);border-radius:6px;padding:28px;background:var(--white);position:relative;display:flex;flex-direction:column;min-height:320px}
+.tl.now{background:var(--pop-red);color:var(--white);border-color:var(--pop-red)}
+.tl.soon{background:var(--black);color:var(--white);border-color:var(--black)}
+.tl .badge{align-self:flex-start;font-family:var(--head);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  border:1.5px solid currentColor;border-radius:100px;padding:5px 13px;opacity:.85;margin-bottom:22px}
+.tl .date{font-family:var(--head);font-size:14px;letter-spacing:.05em;margin-bottom:8px;opacity:.8}
+.tl .count{font-family:var(--head);font-size:13px;opacity:.7;margin-bottom:8px}
+.tl .locs{margin-top:auto;font-size:14px;line-height:1.65;font-weight:600}
+.tl .locs .new{opacity:.95}
+.tl .locs .soon-tag{display:inline-block;font-size:10px;letter-spacing:.08em;vertical-align:middle;
+  border:1px solid currentColor;border-radius:4px;padding:1px 5px;margin-left:6px;opacity:.7;font-family:var(--head)}
+@media(max-width:780px){.timeline{grid-template-columns:1fr}.tl{min-height:auto}}
+
 /* ===== BOOTHS ===== */
 .booths{padding:30px 0 110px}
 .booth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -178,6 +195,7 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
   </a>
   <div class="menu">
     <a href="#about">About</a>
+    <a href="#history">Historia</a>
     <a href="#booths">Booths</a>
     <a href="#work">Work</a>
     <a href="#feed">Feed</a>
@@ -209,6 +227,43 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
     <div><span>Booths</span><strong>03</strong></div>
     <div><span>Location</span><strong>Guatemala</strong></div>
     <div><span>The Vibe</span><strong>Vivid</strong></div>
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section class="history wrap" id="history">
+  <div class="sec-head reveal">
+    <h2>Historia<br>de la Marca</h2>
+    <div class="idx">[ Brand Story ]</div>
+  </div>
+  <p class="lead reveal">Fotopop inició operaciones el 14 de febrero de 2026. En tan solo cuatro meses pasamos de una a tres ubicaciones, y proyectamos llegar a cinco para agosto de 2026.</p>
+  <div class="timeline">
+    <div class="tl reveal">
+      <div class="badge">Start</div>
+      <div class="date">14 Feb 2026</div>
+      <div class="locs">
+        <div class="count">1 ubicación</div>
+        ◍ Vidēre
+      </div>
+    </div>
+    <div class="tl now reveal">
+      <div class="badge">Now</div>
+      <div class="date">Junio 2026</div>
+      <div class="locs">
+        <div class="count">3 ubicaciones</div>
+        ◍ Vidēre<br>◍ Tikal Futura<br>◍ AVIA
+      </div>
+    </div>
+    <div class="tl soon reveal">
+      <div class="badge">Soon</div>
+      <div class="date">Agosto 2026</div>
+      <div class="locs">
+        <div class="count">5 ubicaciones</div>
+        ◍ Vidēre<br>◍ Tikal Futura<br>◍ AVIA<br>
+        <span class="new">◍ Majadas Once<span class="soon-tag">Soon</span></span><br>
+        <span class="new">◍ Pradera Concepción<span class="soon-tag">Soon</span></span>
+      </div>
+    </div>
   </div>
 </section>
 
