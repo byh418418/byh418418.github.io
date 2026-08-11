@@ -89,7 +89,7 @@ nav .menu a:hover:after{width:100%}
 /* ===== HISTORY / TIMELINE ===== */
 .history{padding:40px 0 100px}
 .history .lead{font-family:var(--body);font-size:clamp(18px,2.2vw,26px);font-weight:700;line-height:1.4;max-width:780px;margin-bottom:54px;color:#222}
-.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.timeline{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .tl{border:2px solid var(--black);border-radius:6px;padding:28px;background:var(--white);position:relative;display:flex;flex-direction:column;min-height:320px}
 .tl.now{background:var(--pop-red);color:var(--white);border-color:var(--pop-red)}
 .tl.soon{background:var(--black);color:var(--white);border-color:var(--black)}
@@ -105,13 +105,20 @@ nav .menu a:hover:after{width:100%}
 
 /* ===== BOOTHS ===== */
 .booths{padding:30px 0 110px}
-.booth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.booth-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.booth-grid>.booth:nth-child(-n+3){grid-column:span 2}
+.booth-grid>.booth:nth-child(n+4){grid-column:span 3}
+@media(max-width:1080px){.booth-grid{grid-template-columns:repeat(2,1fr)}
+  .booth-grid>.booth:nth-child(-n+3),.booth-grid>.booth:nth-child(n+4){grid-column:span 1}
+  .booth-grid>.booth:last-child:nth-child(odd){grid-column:span 2}}
 .booth{position:relative;border-radius:6px;overflow:hidden;color:var(--white);min-height:340px;display:flex;flex-direction:column;
   justify-content:space-between;padding:28px;transition:transform .3s,box-shadow .3s}
 .booth:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.22)}
 .booth.red{background:var(--pop-red)}
 .booth.blue{background:var(--blue)}
 .booth.pink{background:var(--pink-booth)}
+.booth.duo{background:linear-gradient(115deg,var(--pop-red) 0 48%,var(--blue) 52% 100%)}
+.booth .tagline{margin-top:10px;font-family:var(--head);font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
 .booth .no{font-family:var(--head);font-size:14px;letter-spacing:.1em;opacity:.85}
 .booth .bn{font-family:var(--head);font-size:clamp(34px,4vw,52px);line-height:.9;text-transform:uppercase;margin-top:auto}
 .booth .where{margin-top:14px;font-size:15px;font-weight:600;line-height:1.4;opacity:.96}
@@ -147,6 +154,11 @@ nav .menu a:hover:after{width:100%}
 .grid .cell:hover .ov{opacity:1}
 .grid .cell .ov span{font-family:var(--head);font-size:12px;line-height:1.25;text-transform:uppercase}
 .grid .cell .multi{position:absolute;top:10px;right:10px;width:18px;height:18px;opacity:.92}
+.grid .cell .play{position:absolute;top:10px;right:10px;width:20px;height:20px;opacity:.95;
+  filter:drop-shadow(0 1px 3px rgba(0,0,0,.5))}
+.grid .cell .badge{position:absolute;left:10px;bottom:10px;font-family:var(--head);font-size:9px;
+  letter-spacing:.12em;padding:3px 6px;border-radius:3px;background:rgba(0,0,0,.55);color:#fff;
+  backdrop-filter:blur(4px);pointer-events:none}
 @media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:560px){.grid{grid-template-columns:repeat(2,1fr)}}
 
@@ -168,7 +180,8 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
 .modal.open{display:flex}
 .modal .box{background:var(--shell);max-width:1040px;width:100%;max-height:90vh;border-radius:6px;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr}
 .modal .m-media{position:relative;background:#111;display:flex;align-items:center;justify-content:center}
-.modal .m-media img{width:100%;height:100%;max-height:90vh;object-fit:contain}
+.modal .m-media img,.modal .m-media video{width:100%;height:100%;max-height:90vh;object-fit:contain;background:#111}
+.modal .m-media video{display:block}
 .modal .m-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.92);width:42px;height:42px;border-radius:50%;border:0;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center}
 .modal .m-nav.prev{left:14px}.modal .m-nav.next{right:14px}
 .modal .m-dots{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;gap:6px}
@@ -180,7 +193,7 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
 .modal .m-body .cap{font-size:14.5px;line-height:1.65;white-space:pre-wrap;color:#222}
 .modal .m-loc{margin-top:22px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#888;font-weight:600}
 .modal .m-close{position:absolute;top:18px;right:22px;z-index:5;color:var(--white);font-size:30px;cursor:pointer;line-height:1}
-@media(max-width:780px){.modal .box{grid-template-columns:1fr;max-height:92vh}.modal .m-media{max-height:50vh}.modal .m-media img{max-height:50vh}}
+@media(max-width:780px){.modal .box{grid-template-columns:1fr;max-height:92vh}.modal .m-media{max-height:50vh}.modal .m-media img,.modal .m-media video{max-height:50vh}}
 
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
 .reveal.in{opacity:1;transform:none}
@@ -224,8 +237,8 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
   <p>Fotopop no es solo una cabina de fotos. Es un <b>statement</b>. Llevamos una cultura de self-photo booth <b>vibrante</b> a Centroamérica, empoderando a cada persona para expresar su identidad con color.</p>
   <div class="meta">
     <div><span>Main Color</span><strong>Pop Red</strong></div>
-    <div><span>Booths</span><strong>03</strong></div>
-    <div><span>Location</span><strong>Guatemala</strong></div>
+    <div><span>Locations</span><strong>05</strong></div>
+    <div><span>Based in</span><strong>Guatemala</strong></div>
     <div><span>The Vibe</span><strong>Vivid</strong></div>
   </div>
 </section>
@@ -236,7 +249,7 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
     <h2>Historia<br>de la Marca</h2>
     <div class="idx">[ Brand Story ]</div>
   </div>
-  <p class="lead reveal">Fotopop inició operaciones el 14 de febrero de 2026. En tan solo cuatro meses pasamos de una a tres ubicaciones, y proyectamos llegar a cinco para agosto de 2026.</p>
+  <p class="lead reveal">Fotopop inició operaciones el 14 de febrero de 2026. En tan solo seis meses pasamos de una a cinco ubicaciones en Guatemala.</p>
   <div class="timeline">
     <div class="tl reveal">
       <div class="badge">Start</div>
@@ -248,20 +261,10 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
     </div>
     <div class="tl now reveal">
       <div class="badge">Now</div>
-      <div class="date">Junio 2026</div>
-      <div class="locs">
-        <div class="count">3 ubicaciones</div>
-        ◍ Vidēre<br>◍ Tikal Futura<br>◍ AVIA
-      </div>
-    </div>
-    <div class="tl soon reveal">
-      <div class="badge">Soon</div>
       <div class="date">Agosto 2026</div>
       <div class="locs">
         <div class="count">5 ubicaciones</div>
-        ◍ Vidēre<br>◍ Tikal Futura<br>◍ AVIA<br>
-        <span class="new">◍ Majadas Once<span class="soon-tag">Soon</span></span><br>
-        <span class="new">◍ Pradera Concepción<span class="soon-tag">Soon</span></span>
+        ◍ Vidēre<br>◍ Tikal Futura<br>◍ AVIA<br>◍ Majadas Once<br>◍ Pradera Concepción
       </div>
     </div>
   </div>
@@ -271,7 +274,7 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
 <section class="booths wrap" id="booths">
   <div class="sec-head reveal">
     <h2>Our<br>Booths</h2>
-    <div class="idx">[ 3 Locations ]</div>
+    <div class="idx">[ 5 Locations ]</div>
   </div>
   <div class="booth-grid">
     <div class="booth red reveal">
@@ -279,13 +282,15 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
       <div>
         <div class="bn">Red</div>
         <div class="where">◍ Vidēre, Nivel 2<br><small>Guatemala</small></div>
+        <div class="tagline">Fiery Red</div>
       </div>
     </div>
     <div class="booth blue reveal">
       <div class="no">Booth 02</div>
       <div>
         <div class="bn">Blue</div>
-        <div class="where">◍ CC Tikal Futura<br><small>Guatemala</small></div>
+        <div class="where">◍ Planeta Maya, CC Tikal Futura<br><small>Guatemala</small></div>
+        <div class="tagline">Infinite Blue</div>
       </div>
     </div>
     <div class="booth pink reveal">
@@ -293,6 +298,23 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
       <div>
         <div class="bn">Pink</div>
         <div class="where">◍ AVIA, Nivel 3<br><small>Guatemala</small></div>
+        <div class="tagline">Hyper Pink</div>
+      </div>
+    </div>
+    <div class="booth duo reveal">
+      <div class="no">Booth 04</div>
+      <div>
+        <div class="bn">Red<br>+ Blue</div>
+        <div class="where">◍ Majadas Once, Nivel 2<br><small>Frente a 100 Montaditos · Guatemala</small></div>
+        <div class="tagline">Fiery Red + Infinite Blue</div>
+      </div>
+    </div>
+    <div class="booth pink reveal">
+      <div class="no">Booth 05 · Pop-up</div>
+      <div>
+        <div class="bn">Pink</div>
+        <div class="where">◍ Pradera Concepción, Nivel 1<br><small>Frente a Primo de Roma · 01.08 — 31.10</small></div>
+        <div class="tagline">Hyper Pink</div>
       </div>
     </div>
   </div>
@@ -328,7 +350,7 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
     <div class="big">POP<br>YOUR<br><a href="https://instagram.com/fotopop_official" target="_blank" rel="noopener">COLOR.</a></div>
     <div class="row">
       <div><span>Instagram</span><p><a href="https://instagram.com/fotopop_official" target="_blank" rel="noopener">@fotopop_official</a></p></div>
-      <div><span>Booths</span><p>Red · Blue · Pink<br>3 locations in Guatemala</p></div>
+      <div><span>Booths</span><p>Red · Blue · Pink<br>5 locations in Guatemala</p></div>
     </div>
   </div>
 </section>
@@ -347,6 +369,7 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
     <div class="m-media">
       <button class="m-nav prev" id="mPrev">‹</button>
       <img id="mImg" src="" alt="" />
+      <video id="mVid" style="display:none" controls playsinline preload="metadata"></video>
       <button class="m-nav next" id="mNext">›</button>
       <div class="m-dots" id="mDots"></div>
     </div>
@@ -364,6 +387,9 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
 const POSTS = window.FOTOPOP_POSTS || [];
 const IMG = f => 'images/thumb/' + f;
 const FULL = f => 'images/' + f;
+const VID = f => 'images/video/' + f;
+const videoFor = (p, file) => (p.videos && p.videos[file]) || null;
+const hasVideo = p => !!(p.videos && Object.keys(p.videos).length);
 
 // nav state
 const nav = document.getElementById('nav');
@@ -377,12 +403,12 @@ window.addEventListener('scroll', ()=>{
 // Lookbook — curated photobooth shots (taken inside the booths, high-angle)
 const featWrap = document.getElementById('features');
 const LOOKBOOK = [
-  {cover:'18402993472154499.jpg', booth:'Pink Booth'},
-  {cover:'18094950961977219.jpg', booth:'Blue Booth'},
+  {cover:'18138692416581706.jpg', booth:'Hyper Pink Booth'},   // Pradera Concepción
+  {cover:'18451171603141404.jpg', booth:'Red + Blue Booth'},   // Majadas Once grand open
   {cover:'18093968989784828.jpg', booth:'Red Booth'},
-  {cover:'17904236574361309.jpg', booth:'Red Booth'},
-  {cover:'18307085050278842.jpg', booth:'Blue Booth'},
-  {cover:'18137337175529004.jpg', booth:'Red Booth'},
+  {cover:'17861059149647734.jpg', booth:'Pink Booth'},         // Barbiecore
+  {cover:'18094950961977219.jpg', booth:'Blue Booth'},
+  {cover:'18006208622926708.jpg', booth:'Red Booth'},          // Blokecore
 ];
 const featured = LOOKBOOK
   .map(l => {
@@ -411,9 +437,13 @@ const grid = document.getElementById('grid');
 POSTS.forEach((p, idx) => {
   const c = document.createElement('div');
   c.className = 'cell';
+  const corner = hasVideo(p)
+    ? '<svg class="play" viewBox="0 0 24 24" fill="#fff"><path d="M8 5.5v13l10-6.5z"/></svg>'
+    : (p.images.length > 1 ? '<svg class="multi" viewBox="0 0 24 24" fill="#fff"><path d="M7 7h11v11H7z" opacity=".55"/><path d="M4 4h11v11H4z"/></svg>' : '');
   c.innerHTML = `
     <img loading="lazy" src="${IMG(p.cover)}" alt="${escapeAttr(p.title)}">
-    ${p.images.length > 1 ? '<svg class="multi" viewBox="0 0 24 24" fill="#fff"><path d="M7 7h11v11H7z" opacity=".55"/><path d="M4 4h11v11H4z"/></svg>' : ''}
+    ${corner}
+    ${p.type === 'reel' ? '<span class="badge">REEL</span>' : ''}
     <div class="ov"><span>${escapeHtml(p.title)}</span></div>`;
   c.addEventListener('click', () => openModal(idx));
   grid.appendChild(c);
@@ -422,7 +452,8 @@ POSTS.forEach((p, idx) => {
 // Modal
 let curPost = 0, curImg = 0;
 const modal = document.getElementById('modal');
-const mImg = document.getElementById('mImg'), mDots = document.getElementById('mDots');
+const mImg = document.getElementById('mImg'), mVid = document.getElementById('mVid'),
+      mDots = document.getElementById('mDots');
 function openModal(i){
   curPost = i; curImg = 0;
   const p = POSTS[i];
@@ -430,25 +461,44 @@ function openModal(i){
   document.getElementById('mCap').textContent = p.caption;
   document.getElementById('mLoc').textContent = p.location ? '◍ ' + p.location : '';
   document.getElementById('mTag').textContent = p.tags && p.tags.length ? '#' + p.tags.slice(0,3).join('  #') : 'Fotopop';
-  renderImg();
+  renderSlide();
   modal.classList.add('open'); document.body.style.overflow = 'hidden';
 }
-function renderImg(){
+function stopVideo(){
+  mVid.pause();
+  mVid.removeAttribute('src');
+  mVid.load();
+  mVid.style.display = 'none';
+}
+function renderSlide(){
   const p = POSTS[curPost];
-  mImg.src = FULL(p.images[curImg]);
+  const file = p.images[curImg];
+  const video = videoFor(p, file);
+  stopVideo();
+  if(video){
+    mImg.style.display = 'none';
+    mVid.poster = FULL(file);
+    mVid.src = VID(video);
+    mVid.style.display = 'block';
+    mVid.play().catch(()=>{});   // 자동재생 차단 시 컨트롤로 재생
+  } else {
+    mImg.src = FULL(file);
+    mImg.style.display = 'block';
+  }
   mDots.innerHTML = p.images.map((_,k)=>`<i class="${k===curImg?'on':''}"></i>`).join('');
   const multi = p.images.length > 1;
   document.getElementById('mPrev').style.display = multi?'flex':'none';
   document.getElementById('mNext').style.display = multi?'flex':'none';
 }
-function closeModal(){ modal.classList.remove('open'); document.body.style.overflow=''; }
+function closeModal(){ stopVideo(); mImg.style.display='block'; modal.classList.remove('open'); document.body.style.overflow=''; }
 document.getElementById('mClose').onclick = closeModal;
 modal.addEventListener('click', e=>{ if(e.target===modal) closeModal(); });
-document.getElementById('mNext').onclick = ()=>{ const n=POSTS[curPost].images.length; curImg=(curImg+1)%n; renderImg(); };
-document.getElementById('mPrev').onclick = ()=>{ const n=POSTS[curPost].images.length; curImg=(curImg-1+n)%n; renderImg(); };
+document.getElementById('mNext').onclick = ()=>{ const n=POSTS[curPost].images.length; curImg=(curImg+1)%n; renderSlide(); };
+document.getElementById('mPrev').onclick = ()=>{ const n=POSTS[curPost].images.length; curImg=(curImg-1+n)%n; renderSlide(); };
 document.addEventListener('keydown', e=>{
   if(!modal.classList.contains('open')) return;
   if(e.key==='Escape') closeModal();
+  if(e.target === mVid && (e.key===' '||e.key==='ArrowRight'||e.key==='ArrowLeft')) return; // 영상 조작 우선
   if(e.key==='ArrowRight') document.getElementById('mNext').click();
   if(e.key==='ArrowLeft') document.getElementById('mPrev').click();
 });
