@@ -154,7 +154,9 @@ nav .menu a:hover:after{width:100%}
 /* ===== FEED GRID ===== */
 .feed{padding:80px 0 100px;background:var(--black);color:var(--white);margin-top:40px}
 .feed .sec-head h2{color:var(--white)}
-.feed .ig{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--white);letter-spacing:.03em}
+.feed .socials{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.feed .ig{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--white);letter-spacing:.03em;transition:opacity .2s}
+.feed .ig:hover{opacity:.72}
 .feed .ig svg{width:20px;height:20px}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
 .grid .cell{position:relative;aspect-ratio:1;overflow:hidden;cursor:pointer;background:#222}
@@ -181,9 +183,26 @@ nav .menu a:hover:after{width:100%}
 .contact .row{display:flex;flex-wrap:wrap;gap:56px;margin-top:60px;border-top:2px solid var(--black);padding-top:38px}
 .contact .row div span{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#888;margin-bottom:10px;font-weight:600}
 .contact .row div p{font-size:17px;font-weight:600;line-height:1.5}
+.contact .row div p a{border-bottom:1px solid rgba(0,0,0,.25);padding-bottom:2px;transition:.2s}
+.contact .row div p a:hover{color:var(--pop-red);border-color:var(--pop-red)}
+@media(max-width:600px){.contact .row{gap:30px}}
 footer{background:var(--black);color:var(--white);padding:40px 0}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 footer small{font-size:12px;color:#999;letter-spacing:.03em}
+footer .fmail{font-size:13px;font-weight:600;letter-spacing:.02em}
+footer .fmail a{color:var(--white);border-bottom:1px solid rgba(255,255,255,.35);padding-bottom:2px;transition:.2s}
+footer .fmail a:hover{color:var(--pop-red);border-color:var(--pop-red)}
+@media(max-width:600px){footer .wrap{justify-content:center;text-align:center;gap:14px}}
+
+/* 우하단 WhatsApp 플로팅 버튼 */
+.wa{position:fixed;right:22px;bottom:22px;z-index:900;width:58px;height:58px;border-radius:50%;
+  background:#25d366;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 20px rgba(0,0,0,.28);transition:transform .25s,box-shadow .25s}
+.wa svg{width:31px;height:31px;fill:#fff}
+.wa:hover{transform:scale(1.08);box-shadow:0 10px 26px rgba(0,0,0,.36)}
+.wa:focus-visible{outline:3px solid var(--white);outline-offset:3px}
+@media(max-width:600px){.wa{right:16px;bottom:16px;width:52px;height:52px}.wa svg{width:28px;height:28px}}
+@media(prefers-reduced-motion:reduce){.wa{transition:none}.wa:hover{transform:none}}
 
 /* ===== MODAL ===== */
 .modal{position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.94);display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(6px)}
@@ -344,10 +363,16 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
   <div class="wrap">
     <div class="sec-head reveal">
       <h2>The Feed</h2>
-      <a class="ig" href="https://instagram.com/fotopop_official" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        @fotopop_official
-      </a>
+      <div class="socials">
+        <a class="ig" href="https://instagram.com/fotopop_official" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          @fotopop_official
+        </a>
+        <a class="ig" href="https://www.tiktok.com/@fotopop_official" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5 2.59 2.59 0 1 1 .76-5.07v-3.1a5.66 5.66 0 0 0-.76-.05A5.68 5.68 0 1 0 15.54 15.4V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3a4.29 4.29 0 0 1-3.24-1.48z"/></svg>
+          @fotopop_official
+        </a>
+      </div>
     </div>
     <div class="grid" id="grid"></div>
   </div>
@@ -360,6 +385,9 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
     <div class="big">POP<br>YOUR<br><a href="https://instagram.com/fotopop_official" target="_blank" rel="noopener">COLOR.</a></div>
     <div class="row">
       <div><span>Instagram</span><p><a href="https://instagram.com/fotopop_official" target="_blank" rel="noopener">@fotopop_official</a></p></div>
+      <div><span>TikTok</span><p><a href="https://www.tiktok.com/@fotopop_official" target="_blank" rel="noopener">@fotopop_official</a></p></div>
+      <div><span>WhatsApp</span><p><a href="https://wa.me/50230790343" target="_blank" rel="noopener">+502 3079 0343</a></p></div>
+      <div><span>Email</span><p><a href="mailto:admin@fotopopgt.com">admin@fotopopgt.com</a></p></div>
       <div><span>Booths</span><p>Red · Blue · Pink<br>5 locations in Guatemala</p></div>
     </div>
   </div>
@@ -368,9 +396,16 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
 <footer>
   <div class="wrap">
     <span class="logo"><img src="images/logo-light.png" alt="Fotopop" style="height:30px"></span>
+    <div class="fmail"><a href="mailto:admin@fotopopgt.com">admin@fotopopgt.com</a></div>
     <small>© 2026 Fotopop · Pop your color.</small>
   </div>
 </footer>
+
+<!-- WhatsApp 플로팅 버튼 -->
+<a class="wa" href="https://wa.me/50230790343" target="_blank" rel="noopener"
+   aria-label="Escríbenos por WhatsApp" title="WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.38-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.79 9.79 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8a9.74 9.74 0 0 1 6.93 2.88 9.73 9.73 0 0 1 2.87 6.93c0 5.41-4.4 9.82-9.8 9.82M20.52 3.45A11.7 11.7 0 0 0 12.05 0C5.6 0 .35 5.25.34 11.7c0 2.06.54 4.07 1.56 5.85L.24 24l6.6-1.73a11.7 11.7 0 0 0 5.2 1.24h.01c6.45 0 11.7-5.25 11.7-11.7 0-3.13-1.21-6.07-3.43-8.28"/></svg>
+</a>
 
 <!-- MODAL -->
 <div class="modal" id="modal">
