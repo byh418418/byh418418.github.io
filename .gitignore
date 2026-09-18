@@ -4,3 +4,6 @@
 # 인스타 export 원본 — DM 등 개인정보 포함, 절대 커밋 금지
 *.zip
 instagram-*/
+
+# 구글맵 업로드용 사진 (사이트 이미지의 복사본, 배포 불필요)
+google-maps-photos/

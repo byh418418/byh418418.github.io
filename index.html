@@ -31,6 +31,8 @@ body{font-family:var(--body);background:var(--shell);color:var(--black);overflow
 img{display:block;width:100%;height:100%;object-fit:cover}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1280px;margin:0 auto;padding:0 28px}
+/* 섹션들이 padding 단축속성으로 .wrap 좌우 여백을 덮지 않도록 padding-block 사용할 것 */
+@media(max-width:780px){.wrap{padding:0 22px}}
 .head{font-family:var(--head);font-weight:400;line-height:.92;letter-spacing:-.01em}
 
 /* ===== LOGO (image wordmark) ===== */
@@ -73,7 +75,7 @@ nav .menu a:hover:after{width:100%}
 @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
 
 /* ===== INTRO / MANIFESTO ===== */
-.intro{padding:120px 0}
+.intro{padding-block:120px}
 .intro .lab{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--pop-red);font-weight:700;margin-bottom:28px}
 .intro p{font-family:var(--body);font-size:clamp(23px,3.3vw,44px);font-weight:700;line-height:1.22;letter-spacing:-.01em;max-width:1020px}
 .intro p b{color:var(--pop-red)}
@@ -87,7 +89,7 @@ nav .menu a:hover:after{width:100%}
 .sec-head .idx{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#888;font-weight:700}
 
 /* ===== HISTORY / TIMELINE ===== */
-.history{padding:40px 0 100px}
+.history{padding-block:40px 100px}
 .history .lead{font-family:var(--body);font-size:clamp(18px,2.2vw,26px);font-weight:700;line-height:1.4;max-width:780px;margin-bottom:54px;color:#222}
 .timeline{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .tl{border:2px solid var(--black);border-radius:6px;padding:28px;background:var(--white);position:relative;display:flex;flex-direction:column;min-height:320px}
@@ -104,7 +106,7 @@ nav .menu a:hover:after{width:100%}
 @media(max-width:780px){.timeline{grid-template-columns:1fr}.tl{min-height:auto}}
 
 /* ===== BOOTHS ===== */
-.booths{padding:30px 0 110px}
+.booths{padding-block:30px 110px}
 .booth-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
 .booth-grid>.booth:nth-child(-n+3){grid-column:span 2}
 .booth-grid>.booth:nth-child(n+4){grid-column:span 3}
@@ -123,10 +125,18 @@ nav .menu a:hover:after{width:100%}
 .booth .bn{font-family:var(--head);font-size:clamp(34px,4vw,52px);line-height:.9;text-transform:uppercase;margin-top:auto}
 .booth .where{margin-top:14px;font-size:15px;font-weight:600;line-height:1.4;opacity:.96}
 .booth .where small{display:block;font-weight:400;opacity:.8;font-size:13px;margin-top:2px}
-@media(max-width:780px){.booth-grid{grid-template-columns:1fr}}
+/* 모바일: 부스 카드를 한 칸씩 세로로 쌓음 (span 규칙까지 되돌려야 칸이 안 찌그러짐) */
+@media(max-width:780px){
+  .booth-grid{grid-template-columns:1fr;gap:14px}
+  .booth-grid>.booth:nth-child(-n+3),
+  .booth-grid>.booth:nth-child(n+4),
+  .booth-grid>.booth:last-child:nth-child(odd){grid-column:auto}
+  .booth{min-height:250px;padding:24px}
+  .booth .bn{font-size:clamp(38px,11vw,54px)}
+}
 
 /* ===== LOOKBOOK ===== */
-.lookbook{padding:40px 0 90px}
+.lookbook{padding-block:40px 90px}
 .feature{display:grid;grid-template-columns:1.15fr 1fr;margin-bottom:18px;border:2px solid var(--black);background:var(--white);overflow:hidden;cursor:pointer}
 .feature.flip{grid-template-columns:1fr 1.15fr}
 .feature.flip .f-media{order:2}
@@ -163,7 +173,7 @@ nav .menu a:hover:after{width:100%}
 @media(max-width:560px){.grid{grid-template-columns:repeat(2,1fr)}}
 
 /* ===== CONTACT ===== */
-.contact{padding:120px 0}
+.contact{padding-block:120px}
 .contact .lab{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--pop-red);font-weight:700;margin-bottom:28px}
 .contact .big{font-family:var(--head);font-size:clamp(48px,12vw,180px);line-height:.84;text-transform:uppercase;letter-spacing:-.03em}
 .contact .big a{color:var(--pop-red);transition:.2s}
@@ -249,7 +259,7 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
     <h2>Historia<br>de la Marca</h2>
     <div class="idx">[ Brand Story ]</div>
   </div>
-  <p class="lead reveal">Fotopop inició operaciones el 14 de febrero de 2026. En tan solo seis meses pasamos de una a cinco ubicaciones en Guatemala.</p>
+  <p class="lead reveal">Fotopop inició operaciones el 14 de febrero de 2026. En tan solo siete meses pasamos de una a cinco ubicaciones en Guatemala.</p>
   <div class="timeline">
     <div class="tl reveal">
       <div class="badge">Start</div>
@@ -261,10 +271,10 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
     </div>
     <div class="tl now reveal">
       <div class="badge">Now</div>
-      <div class="date">Agosto 2026</div>
+      <div class="date">Septiembre 2026 ~</div>
       <div class="locs">
         <div class="count">5 ubicaciones</div>
-        ◍ Vidēre<br>◍ Tikal Futura<br>◍ AVIA<br>◍ Majadas Once<br>◍ Pradera Concepción
+        ◍ Majadas Once<br>◍ Cayalá<br>◍ Vidēre<br>◍ AVIA<br>◍ Pradera Concepción
       </div>
     </div>
   </div>
@@ -277,36 +287,36 @@ footer small{font-size:12px;color:#999;letter-spacing:.03em}
     <div class="idx">[ 5 Locations ]</div>
   </div>
   <div class="booth-grid">
-    <div class="booth red reveal">
-      <div class="no">Booth 01 · Flagship</div>
+    <div class="booth duo reveal">
+      <div class="no">Booth 01</div>
       <div>
-        <div class="bn">Red</div>
-        <div class="where">◍ Vidēre, Nivel 2<br><small>Guatemala</small></div>
-        <div class="tagline">Fiery Red</div>
+        <div class="bn">Red<br>+ Blue</div>
+        <div class="where">◍ Majadas Once, Nivel 2<br><small>Frente a 100 Montaditos · Guatemala</small></div>
+        <div class="tagline">Fiery Red + Infinite Blue</div>
       </div>
     </div>
     <div class="booth blue reveal">
       <div class="no">Booth 02</div>
       <div>
         <div class="bn">Blue</div>
-        <div class="where">◍ Planeta Maya, CC Tikal Futura<br><small>Guatemala</small></div>
+        <div class="where">◍ Paseo Cayalá, Edificio B1, Nivel 1<br><small>Guatemala</small></div>
         <div class="tagline">Infinite Blue</div>
       </div>
     </div>
-    <div class="booth pink reveal">
+    <div class="booth red reveal">
       <div class="no">Booth 03</div>
+      <div>
+        <div class="bn">Red</div>
+        <div class="where">◍ Vidēre, Nivel 2<br><small>Guatemala</small></div>
+        <div class="tagline">Fiery Red</div>
+      </div>
+    </div>
+    <div class="booth pink reveal">
+      <div class="no">Booth 04</div>
       <div>
         <div class="bn">Pink</div>
         <div class="where">◍ AVIA, Nivel 3<br><small>Guatemala</small></div>
         <div class="tagline">Hyper Pink</div>
-      </div>
-    </div>
-    <div class="booth duo reveal">
-      <div class="no">Booth 04</div>
-      <div>
-        <div class="bn">Red<br>+ Blue</div>
-        <div class="where">◍ Majadas Once, Nivel 2<br><small>Frente a 100 Montaditos · Guatemala</small></div>
-        <div class="tagline">Fiery Red + Infinite Blue</div>
       </div>
     </div>
     <div class="booth pink reveal">
@@ -407,7 +417,7 @@ const LOOKBOOK = [
   {cover:'18451171603141404.jpg', booth:'Red + Blue Booth'},   // Majadas Once grand open
   {cover:'18093968989784828.jpg', booth:'Red Booth'},
   {cover:'17861059149647734.jpg', booth:'Pink Booth'},         // Barbiecore
-  {cover:'18094950961977219.jpg', booth:'Blue Booth'},
+  {cover:'18133367611570050.jpg', booth:'Blue Booth'},        // Cayalá opening
   {cover:'18006208622926708.jpg', booth:'Red Booth'},          // Blokecore
 ];
 const featured = LOOKBOOK

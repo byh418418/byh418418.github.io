@@ -32,8 +32,14 @@ fonts/            ← Aileron 폰트 넣는 자리 (아래 참고)
 - **컬러**: 메인 = Pop Red `#ce1212` / Lens Black / Paper White / 배경 Shell Grey `#efefef`. 부스 컬러로만 Soda Blue `#0047ab`, Pink 사용.
 - **폰트**: 제목·로고·슬로건 = **Archivo Black** (Google Fonts, 자동 로드) / 본문·캡션 = **Aileron**.
 - **로고**: Fotopop 워드마크.
-- **부스 5곳**: 🔴 Red(1호점·Vidēre N2) · 🔵 Blue(2호점·Planeta Maya, Tikal Futura) · 🩷 Pink(3호점·AVIA N3) · 🔴🔵 Red+Blue(4호점·Majadas Once N2) · 🩷 Pink(5호점·Pradera Concepción N1, 팝업 2026.08.01–10.31).
-  > 팝업(5호점)은 10/31 종료 예정. 끝나면 `index.html`의 booths 섹션에서 카드 1개 지우고 `[ 5 Locations ]` → `[ 4 Locations ]`, contact 섹션 숫자도 같이 수정.
+- **부스 5곳** (2026.09 기준, index.html 표시 순서):
+  1. 🔴🔵 Red+Blue — Majadas Once, Nivel 2
+  2. 🔵 Blue — Paseo Cayalá, Edificio B1 Nivel 1 (22 calle 9-33, Zona 16) · 2026.09.12 오픈
+  3. 🔴 Red — Vidēre, Nivel 2
+  4. 🩷 Pink — AVIA, Nivel 3
+  5. 🩷 Pink — Pradera Concepción, Nivel 1 (팝업 2026.08.01–10.31)
+  > Tikal Futura(Planeta Maya) 지점은 2026.09.11 영업 종료 → Cayalá로 이전.
+  > 팝업(5호점)은 10/31 종료 예정. 끝나면 booths 섹션 카드 1개 삭제 + `[ 5 Locations ]` → `[ 4 Locations ]`, intro `Locations 05`, contact 숫자도 같이 수정.
 
 ## ⚠️ Aileron 폰트 넣기 (본문 폰트)
 Aileron은 Google Fonts에 없어서 파일을 직접 넣어야 해. `fonts/` 폴더에 아래 3개를 넣어줘:
@@ -64,6 +70,7 @@ fonts/Aileron-Bold.woff2
 - **글/캡션 고치기**: `posts-data.js` 에서 해당 게시물의 `"caption"` 텍스트만 수정
 - **사진 교체**: `images/` 와 `images/thumb/` 에 같은 파일명으로 덮어쓰기
 - **메인 대표작(Lookbook)**: `index.html` 의 `const LOOKBOOK = [...]` 에서 파일명 6개를 바꾸면 됨
+- **반응형 주의**: 섹션 CSS에서 `padding: 40px 0` 같은 단축속성을 쓰면 `.wrap` 의 좌우 여백(28px)이 덮여서 모바일에서 글자가 화면 끝에 붙음. 세로 여백만 줄 때는 반드시 `padding-block` 을 쓸 것.
 - **연락처/위치**: `index.html` 맨 아래 `contact` 섹션에서 수정
 
 ## 인스타 새 게시물 반영하기

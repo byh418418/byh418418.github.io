@@ -1,5 +1,254 @@
 window.FOTOPOP_POSTS = [
  {
+  "title": "pov : finding Fotopop cayalá.",
+  "caption": "pov : finding Fotopop cayalá.",
+  "images": [
+   "18197424379386189.jpg"
+  ],
+  "cover": "18197424379386189.jpg",
+  "location": "Cayalá",
+  "tags": [],
+  "type": "reel",
+  "videos": {
+   "18197424379386189.jpg": "18197424379386189.mp4"
+  },
+  "date": "2026-09-16"
+ },
+ {
+  "title": "Llegamos a Cayalá!!!",
+  "caption": "Llegamos a Cayalá!!!💙\n\nUn nuevo espacio, una nueva era.\nMás que un color. Sentí la profundidad del Infinite Blue.\n📍 Paseo Cayalá (Pasillo junto a Saúl)",
+  "images": [
+   "17888398926457876.jpg",
+   "18137861887613024.jpg",
+   "18629959063029240.jpg",
+   "18233007391321871.jpg",
+   "17893719024416127.jpg",
+   "18123815974820553.jpg"
+  ],
+  "cover": "17888398926457876.jpg",
+  "location": "Cayalá",
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-09-12"
+ },
+ {
+  "title": "Cayalá. Mañana.",
+  "caption": "Cayalá. Mañana.\n\nFinalmente, mañana estrenamos el spot de Cayalá. Ready?",
+  "images": [
+   "18164235517419282.jpg",
+   "18133367611570050.jpg",
+   "18127779775686296.jpg"
+  ],
+  "cover": "18164235517419282.jpg",
+  "location": "Cayalá",
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-09-11"
+ },
+ {
+  "title": "12 de septiembre. Opening de Cayalá Spot.",
+  "caption": "12 de septiembre. Opening de Cayalá Spot.\n\n[Opening event — Paseo Cayalá]\nNEXT SHOOT GRATIS\n\nNuevo spot. Mismo ritual.\nVení, posá, documentá el fit.\n\n12.09 · Sábado · 12:00 — 18:00\nPasillo junto a Saúl\n\nTomate tus fotos en nuestro booth de Cayalá, subí tu historia etiquetándonos (@fotopop_official) dentro del horario y te mandamos por DM tu sesión de cortesía para la próxima. Entre todos los participantes sorteamos 3 PopSockets de Fotopop.\n\nSet the tone. Nos vemos el sábado. 🤍\n\n⚠️ ¡Ten en cuenta esto! ⚠️\n• Tu cuenta debe ser pública para que podamos ver tu historia y enviarte el cupón.\n• Límite de 1 sesión de cortesía por cuenta de IG. \n• El cupón es válido únicamente para tu próxima visita (no aplicable el mismo día).\n• Válido únicamente para fotos tomadas en el spot de Paseo Cayalá.",
+  "images": [
+   "17967487584168445.jpg",
+   "17989837992030357.jpg",
+   "18390470590164195.jpg",
+   "18121903489907809.jpg"
+  ],
+  "cover": "17967487584168445.jpg",
+  "location": "Cayalá",
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-09-09"
+ },
+ {
+  "title": "Cayalá, next week...!",
+  "caption": "Cayalá, next week...!",
+  "images": [
+   "18132486904645092.jpg",
+   "17946807204291108.jpg",
+   "17904574941483843.jpg",
+   "17989181402855774.jpg",
+   "18619108834031057.jpg"
+  ],
+  "cover": "18132486904645092.jpg",
+  "location": "Cayalá",
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-09-06"
+ },
+ {
+  "title": "Cerrando una era en Tikal Futura.",
+  "caption": "Cerrando una era en Tikal Futura. 🎬\n\nEste 11 de septiembre es nuestro último día en Tikal.\nFueron meses de mucha main character energy en este booth.\n\nMil gracias a los que hicieron de esta cabina su spot favorito. Esto no se acaba — solo cambiamos de spot. 🤍\n\nVení a dejar tu vibe en Tikal antes del 11. 📸\n\n📍 Siguiente parada: Paseo Cayalá",
+  "images": [
+   "17916905802432359.jpg"
+  ],
+  "cover": "17916905802432359.jpg",
+  "location": "Cayalá · Tikal Futura",
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-09-05"
+ },
+ {
+  "title": "Coming soon...!",
+  "caption": "Coming soon...!",
+  "images": [
+   "18431618890179150.jpg"
+  ],
+  "cover": "18431618890179150.jpg",
+  "location": null,
+  "tags": [],
+  "type": "reel",
+  "videos": {
+   "18431618890179150.jpg": "18431618890179150.mp4"
+  },
+  "date": "2026-09-03"
+ },
+ {
+  "title": "El Camera Frame que necesitabas.",
+  "caption": "El Camera Frame que necesitabas. 📸\n\nCustomizá a tu vibe (probalo en B&W 🖤).\nMandáselo a tu @ para ir a Fotopop hoy. 👇",
+  "images": [
+   "17965228929158376.jpg"
+  ],
+  "cover": "17965228929158376.jpg",
+  "location": null,
+  "tags": [],
+  "type": "reel",
+  "videos": {
+   "17965228929158376.jpg": "17965228929158376.mp4"
+  },
+  "date": "2026-09-01"
+ },
+ {
+  "title": "Tu nueva obsesión en Pradera Concepción",
+  "caption": "Tu nueva obsesión en Pradera Concepción🩷\nFotopop, pop your color.",
+  "images": [
+   "17905306806504494.jpg"
+  ],
+  "cover": "17905306806504494.jpg",
+  "location": "Pradera Concepción",
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-08-29"
+ },
+ {
+  "title": "el upgrade que tu camera roll necesitaba.",
+  "caption": "el upgrade que tu camera roll necesitaba. 📁🤍\n\nelegí el nuevo diseño 'Album 002' y llevate tus favoritos en físico.\nya live en todos los booths.",
+  "images": [
+   "18114092473949767.jpg",
+   "18110643242015920.jpg"
+  ],
+  "cover": "18114092473949767.jpg",
+  "location": null,
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-08-26"
+ },
+ {
+  "title": "New folder created: My Album Frame.",
+  "caption": "New folder created: My Album Frame. 📁🤍\n\nGuarda tus fotos en tu propio álbum. Elige ’Album Frame‘ + ’Album 001‘ y listo. ✨\n\nAlbum frame now at every Fotopop.\n📍Majadas Once\n📍Pradera Concepción\n📍Videre, z15\n📍AVIA, z10\n📍Tikal Futura",
+  "images": [
+   "18375245335231411.jpg"
+  ],
+  "cover": "18375245335231411.jpg",
+  "location": "Pradera Concepción · Majadas Once",
+  "tags": [],
+  "type": "reel",
+  "videos": {
+   "18375245335231411.jpg": "18375245335231411.mp4"
+  },
+  "date": "2026-08-23"
+ },
+ {
+  "title": "YESSSS!",
+  "caption": "YESSSS!\nTu álbum de favoritos, en la vida real. 📁🤍\n\nElige 'Album Frame' + 'Album 002' y llévate tu propio Favorites impreso. ✨\n\nYa live en todos los booths de Fotopop.\n📍Majadas Once\n📍Pradera Concepción\n📍Videre, z15\n📍AVIA, z10\n📍Tikal Futura",
+  "images": [
+   "18467614657113430.jpg"
+  ],
+  "cover": "18467614657113430.jpg",
+  "location": "Pradera Concepción · Majadas Once",
+  "tags": [],
+  "type": "reel",
+  "videos": {
+   "18467614657113430.jpg": "18467614657113430.mp4"
+  },
+  "date": "2026-08-20"
+ },
+ {
+  "title": "Wait, ¿un frame con iPhone aesthetic en Fotopop?",
+  "caption": "Wait, ¿un frame con iPhone aesthetic en Fotopop? 📱👀\n\nNew album created. 📁✨\n\nAlbum Frame Collection is live.\n3 nuevos frames te esperan para darle ese digital aesthetic a tus fotos:\n\n▪️ Camera Frame 001: El POV de una cámara capturando tu mejor ángulo. 📸\n▪️ Album Frame 001: Guarda esos momentos que no quieres olvidar. 📂\n▪️ Album Frame 002: Toca el ♡ y agrégalo a tus Favorites.\n\nVe a tu booth más cercano y guarda el momento.\n⏳ Limited edition: Solo hasta el 30 de septiembre.",
+  "images": [
+   "17912877747443195.jpg",
+   "17949389028037200.jpg",
+   "17971150757932742.jpg",
+   "17901604752340128.jpg",
+   "18090436892546527.jpg"
+  ],
+  "cover": "17912877747443195.jpg",
+  "location": null,
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-08-15"
+ },
+ {
+  "title": "New album created.",
+  "caption": "New album created. 📁🤍\n\nLa Album Frame Collection acaba de aterrizar.\nVen y experimenta 3 nuevos diseños, ya disponibles en todos los booths de Fotopop:\n\n📸 Camera Frame 001: Captura el instante exacto. El feeling de estar frente a la lente de una cámara digital.\n📂 Album Frame 001: Save the moments. Para guardar tus recuerdos en tu propio folder.\n♡ Album Frame 002: Add to Favorites. El marco perfecto para ir directo a tus favoritos.\n\n¿Cuál es tu vibe de hoy? Posa, imprime y guarda.\n⏳ Disponible so",
+  "images": [
+   "18130820176728217.jpg",
+   "18061999877780008.jpg",
+   "18090251264554411.jpg",
+   "18081780566375072.jpg",
+   "18069428693731337.jpg"
+  ],
+  "cover": "18130820176728217.jpg",
+  "location": null,
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-08-15"
+ },
+ {
+  "title": "New album created.",
+  "caption": "New album created. 📁🤍\n\nLa Album Frame Collection acaba de aterrizar.\nCreamos 3 nuevos diseños, cada uno con su propia historia. ¿Cuál es tu mood hoy?\n\n📸 Camera Frame 001:\n¿Ubicas la emoción de cuando alguien te apunta con una cámara digital y captura tu lado más raw y perfecto? Ese es el POV de este frame. Protagonismo puro.\n\n📂 Album Frame 001:\nNo todos los momentos van al feed; los más divertidos se guardan en un folder especial. Creamos el archivo digital perfecto para coleccionar esa energía caótica y real con tus amigos.\n\n♡ Album Frame 002:\nSiempre le damos al ♡ para guardar nuestras mejores fotos en el álbum de favoritos. Con este frame, cada shot que te tomas en Fotopop ya es un 10/10. All favorites, no skips.\n\nVe a tu booth más cercano y guarda el momento.\n⏳ Limited edition: Solo hasta el 30 de septiembre.",
+  "images": [
+   "18439225789122950.jpg",
+   "18618772285057258.jpg",
+   "17964110166171416.jpg",
+   "17966549625136480.jpg",
+   "18119338192841667.jpg",
+   "18139759906589740.jpg"
+  ],
+  "cover": "18439225789122950.jpg",
+  "location": null,
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-08-15"
+ },
+ {
+  "title": "Recién impresos, tus retratos con ese look.",
+  "caption": "Recién impresos, tus retratos con ese look.",
+  "images": [
+   "18085721927439236.jpg",
+   "18051309680569203.jpg",
+   "18089320523158218.jpg",
+   "18120362668892139.jpg"
+  ],
+  "cover": "18085721927439236.jpg",
+  "location": null,
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-08-12"
+ },
+ {
   "title": "Bring your people. Timestamp it.",
   "caption": "Bring your people. Timestamp it.\n\n📍Hyper Pink Booth : Pradera Concepción, AVIA (Z10)",
   "images": [
