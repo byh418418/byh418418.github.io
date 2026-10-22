@@ -7,3 +7,7 @@ instagram-*/
 
 # 구글맵 업로드용 사진 (사이트 이미지의 복사본, 배포 불필요)
 google-maps-photos/
+
+# _tools/ 는 일부러 커밋함 — 클라우드 세션이 clone 후 인수인계 문서를 읽을 수 있어야 함
+_tools/__pycache__/
+_tools/manifest.json

@@ -2,6 +2,9 @@
 
 인스타그램 데이터 기반 매거진/룩북 스타일 포트폴리오 사이트.
 
+> 🤖 **AI 어시스턴트에게**: 작업 전 **[`_tools/인수인계.md`](_tools/인수인계.md)** 를 먼저 읽을 것.
+> 현재 상태, 진행 중인 작업, 클라우드/로컬 모드별 가능 범위, 과거에 터졌던 버그가 정리돼 있음.
+
 ## 구성
 ```
 index.html        ← 메인 페이지 (전부 여기 들어있음)
@@ -37,9 +40,11 @@ fonts/            ← Aileron 폰트 넣는 자리 (아래 참고)
   2. 🔵 Blue — Paseo Cayalá, Edificio B1 Nivel 1 (22 calle 9-33, Zona 16) · 2026.09.12 오픈
   3. 🔴 Red — Vidēre, Nivel 2
   4. 🩷 Pink — AVIA, Nivel 3
-  5. 🩷 Pink — Pradera Concepción, Nivel 1 (팝업 2026.08.01–10.31)
+  5. 🩷 Pink — La Estación, Nivel 2 (상설)
   > Tikal Futura(Planeta Maya) 지점은 2026.09.11 영업 종료 → Cayalá로 이전.
-  > 팝업(5호점)은 10/31 종료 예정. 끝나면 booths 섹션 카드 1개 삭제 + `[ 5 Locations ]` → `[ 4 Locations ]`, intro `Locations 05`, contact 숫자도 같이 수정.
+  > 지점이 바뀌면 **5군데를 같이** 고쳐야 함: booths 카드 / booths `[ N Locations ]` / intro `Locations` 숫자 / contact `N locations in Guatemala` / history 타임라인 `N ubicaciones`+목록.
+  > 폐점 이력: Tikal Futura(Planeta Maya) 2026.09.11 종료 → Cayalá 이전 · Pradera Concepción 팝업 2026.10 종료 → La Estación.
+  > 과거 지점 사진 포스트는 인스타 아카이브라 피드에 그대로 남겨둠.
 
 ## ⚠️ Aileron 폰트 넣기 (본문 폰트)
 Aileron은 Google Fonts에 없어서 파일을 직접 넣어야 해. `fonts/` 폴더에 아래 3개를 넣어줘:
