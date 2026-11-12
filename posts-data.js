@@ -1,5 +1,213 @@
 window.FOTOPOP_POSTS = [
  {
+  "title": "sí, es THAT serious.",
+  "caption": "sí, es THAT serious.\n\nPop! it’s Christmas — frames de temporada, disponibles hasta el 31.12.\nPonete el gorro, el resto lo hacemos nosotros🎅",
+  "images": [
+   "18129473723314049.jpg"
+  ],
+  "cover": "18129473723314049.jpg",
+  "location": null,
+  "tags": [],
+  "type": "reel",
+  "videos": {
+   "18129473723314049.jpg": "18129473723314049.mp4"
+  },
+  "date": "2026-11-10"
+ },
+ {
+  "title": "Fotopop Holiday Season",
+  "caption": "Fotopop Holiday Season\n《Pop! It's Christmas!》 🎄\n\n06/12/2026 - 31/12/2026\n\nDeslizá para conocer todos los diseños de frames 📲\n\n¡Ya disponible en todas nuestras sucursales!\n📍Paseo Cayalá / Majadas Once / La Estación / Videre / Avia",
+  "images": [
+   "17989945368110777.jpg",
+   "18109884094956717.jpg",
+   "18175520074457464.jpg",
+   "18099665261419738.jpg",
+   "18106615307005279.jpg",
+   "18219678781354930.jpg",
+   "17910249312579929.jpg",
+   "18122451500075003.jpg",
+   "17973210015196538.jpg",
+   "18104662865036564.jpg",
+   "18116965136029830.jpg"
+  ],
+  "cover": "17989945368110777.jpg",
+  "location": "La Estación · Cayalá",
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-11-06"
+ },
+ {
+  "title": "Fotopop Holiday Season",
+  "caption": "Fotopop Holiday Season\n《Pop! It's Christmas!》 🎄\n\n06/12/2026 - 31/12/2026\n\nDeslizá para conocer todos los diseños de frames 📲",
+  "images": [
+   "17989193241115007.jpg",
+   "18121478966283570.jpg",
+   "18020727500948567.jpg",
+   "18121294966976169.jpg",
+   "18104724659336053.jpg",
+   "18022275776728868.jpg",
+   "18132219110487059.jpg",
+   "18075198743760509.jpg",
+   "17895755502434125.jpg",
+   "18125711531294468.jpg",
+   "17907168543599958.jpg"
+  ],
+  "cover": "17989193241115007.jpg",
+  "location": null,
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-11-06"
+ },
+ {
+  "title": "¡Guardá tus holiday memories más brillantes de es…",
+  "caption": "¡Guardá tus holiday memories más brillantes de este año en Fotopop!\n\nFotopop Holiday Season\n《Pop! It's Christmas!》 🎄\n\n06/12/2026 - 31/12/2026\n\nDeslizá para conocer todos los diseños de frames 📲",
+  "images": [
+   "17930999922183229.jpg",
+   "17997182999843776.jpg",
+   "17989694469073178.jpg",
+   "18102753326357842.jpg",
+   "18099357449428457.jpg",
+   "17980834814919411.jpg",
+   "17956072074329473.jpg",
+   "17876116245641232.jpg",
+   "18023578517948429.jpg",
+   "18229776559331972.jpg",
+   "18029371277699402.jpg"
+  ],
+  "cover": "17930999922183229.jpg",
+  "location": null,
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-11-06"
+ },
+ {
+  "title": "Holiday Season is coming",
+  "caption": "Holiday Season is coming 🔔\nNuevos frames navideños — drop mañana, 06.11.\nPrepará tus mejores outfits 🎄",
+  "images": [
+   "18156160894536184.jpg"
+  ],
+  "cover": "18156160894536184.jpg",
+  "location": null,
+  "tags": [],
+  "type": "reel",
+  "videos": {
+   "18156160894536184.jpg": "18156160894536184.mp4"
+  },
+  "date": "2026-11-05"
+ },
+ {
+  "title": "La cabina más cool de la zona 10 ya está en La Es…",
+  "caption": "La cabina más cool de la zona 10 ya está en La Estación 🩷\nNivel 2, a la derecha de las escaleras eléctricas.\nGuardá este post para no perderte 📍",
+  "images": [
+   "18658015903048552.jpg"
+  ],
+  "cover": "18658015903048552.jpg",
+  "location": "La Estación",
+  "tags": [],
+  "type": "reel",
+  "videos": {
+   "18658015903048552.jpg": "18658015903048552.mp4"
+  },
+  "date": "2026-11-04"
+ },
+ {
+  "title": "Llegamos a La Estación!!!",
+  "caption": "Llegamos a La Estación!!! 🩷\n\nTodo cambia cuando entrás a la cabina.\nEl poder del Hyper Pink está listo para romper tu feed.\nStart your session today!\n\n📍 La Estación Zona 10 (2do nivel, La Terraza)",
+  "images": [
+   "17922119067240524.jpg",
+   "18118583645116334.jpg",
+   "18120212791960163.jpg",
+   "18017749724974903.jpg",
+   "17950429686356686.jpg",
+   "18113555918192746.jpg"
+  ],
+  "cover": "17922119067240524.jpg",
+  "location": "La Estación",
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-11-02"
+ },
+ {
+  "title": "La Estación. 02.11.",
+  "caption": "La Estación. 02.11.\nHyper pink.\n\nUn nuevo spot para tu feed. \nPreparate para encender la vibra.",
+  "images": [
+   "18130014062484206.jpg"
+  ],
+  "cover": "18130014062484206.jpg",
+  "location": "La Estación",
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-11-01"
+ },
+ {
+  "title": "pov: tu Halloween perfecto con Fotopop",
+  "caption": "pov: tu Halloween perfecto con Fotopop 🎃📸\n\nTu disfraz merece más que una noche… ¡merece una foto! 👻\n\nEste 31 de octubre, vení a Fotopop con tu disfraz y llevate el mejor recuerdo con nuestros marcos de Halloween.",
+  "images": [
+   "18120713653948186.jpg"
+  ],
+  "cover": "18120713653948186.jpg",
+  "location": null,
+  "tags": [],
+  "type": "reel",
+  "videos": {
+   "18120713653948186.jpg": "18120713653948186.mp4"
+  },
+  "date": "2026-10-30"
+ },
+ {
+  "title": "2 DE NOVIEMBRE.",
+  "caption": "2 DE NOVIEMBRE.\nFotopop La Estación OPENING.\n\nReady?",
+  "images": [
+   "18415946710086699.jpg"
+  ],
+  "cover": "18415946710086699.jpg",
+  "location": "La Estación",
+  "tags": [],
+  "type": "reel",
+  "videos": {
+   "18415946710086699.jpg": "18415946710086699.mp4"
+  },
+  "date": "2026-10-29"
+ },
+ {
+  "title": "¿La mejor forma de vivir Halloween?",
+  "caption": "¿La mejor forma de vivir Halloween? \nCon tus people y una escena de terror 🎃📸\n\nDesliza para ver las poses → guarda esto antes de ir 📌\nHalloween frame solo hasta el 5 de noviembre 👻\n\nEtiqueta a tu co-protagonista 👇",
+  "images": [
+   "18416557666091284.jpg",
+   "18135274498679509.jpg",
+   "18146056369596898.jpg",
+   "18103444898377825.jpg",
+   "18118852466321421.jpg"
+  ],
+  "cover": "18416557666091284.jpg",
+  "location": null,
+  "tags": [],
+  "type": "post",
+  "videos": {},
+  "date": "2026-10-26"
+ },
+ {
+  "title": "Próxima estación...",
+  "caption": "Próxima estación... 🚇\nLlegamos a nuestro nuevo spot este noviembre!!!\n\n¿Adivinás cuál es nuestro nuevo spot?👀\n\nDejá tu respuesta acá abajo👇 \nEntre los que adivinen, vamos a sortear 1 sesión de fotos GRATIS para que vayas a estrenar la cabina. 📸\n\n🔎Ojo: la pista ya está escondida en este post. Prestá atención!!\n\n🗓️ 2 de noviembre.",
+  "images": [
+   "18130960783812648.jpg",
+   "18064042322527045.jpg"
+  ],
+  "cover": "18130960783812648.jpg",
+  "location": null,
+  "tags": [],
+  "type": "post",
+  "videos": {
+   "18064042322527045.jpg": "18064042322527045.mp4"
+  },
+  "date": "2026-10-23"
+ },
+ {
   "title": "— trick or treat!",
   "caption": "— trick or treat! 🃏🕸️\nLa Spooky Season se vive mejor desde arriba. \nUn poco de locura y mucho estilo en nuestra cabina roja. \nCon disfraz completo o con tu outfit favorito, este ángulo nunca falla.\n👻¿Cuál será tu disfraz de este año? \nDéjalo en los comentarios y etiqueta a tu cómplice👇🦇\n\n📍Fiery Red booth : Videre, Majadas Once",
   "images": [
@@ -212,7 +420,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-09-11"
  },
  {
   "title": "12 de septiembre. Opening de Cayalá Spot.",
@@ -228,7 +436,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-09-09"
  },
  {
   "title": "Cayalá, next week...!",
@@ -245,7 +453,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-09-06"
  },
  {
   "title": "Cerrando una era en Tikal Futura.",
@@ -258,7 +466,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-09-05"
  },
  {
   "title": "Coming soon...!",
@@ -273,7 +481,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18431618890179150.jpg": "18431618890179150.mp4"
   },
-  "date": null
+  "date": "2026-09-03"
  },
  {
   "title": "El Camera Frame que necesitabas.",
@@ -288,7 +496,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "17965228929158376.jpg": "17965228929158376.mp4"
   },
-  "date": null
+  "date": "2026-09-01"
  },
  {
   "title": "Tu nueva obsesión en Pradera Concepción",
@@ -301,7 +509,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-08-29"
  },
  {
   "title": "el upgrade que tu camera roll necesitaba.",
@@ -315,7 +523,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-08-26"
  },
  {
   "title": "New folder created: My Album Frame.",
@@ -330,7 +538,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18375245335231411.jpg": "18375245335231411.mp4"
   },
-  "date": null
+  "date": "2026-08-23"
  },
  {
   "title": "YESSSS!",
@@ -345,7 +553,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18467614657113430.jpg": "18467614657113430.mp4"
   },
-  "date": null
+  "date": "2026-08-20"
  },
  {
   "title": "Wait, ¿un frame con iPhone aesthetic en Fotopop?",
@@ -362,7 +570,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-08-15"
  },
  {
   "title": "New album created.",
@@ -379,7 +587,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-08-15"
  },
  {
   "title": "New album created.",
@@ -397,7 +605,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-08-15"
  },
  {
   "title": "Recién impresos, tus retratos con ese look.",
@@ -413,7 +621,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-08-12"
  },
  {
   "title": "Bring your people. Timestamp it.",
@@ -428,7 +636,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-08-09"
  },
  {
   "title": "fotopop_therapy.mp4",
@@ -443,7 +651,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18120714835852196.jpg": "18120714835852196.mp4"
   },
-  "date": null
+  "date": "2026-08-06"
  },
  {
   "title": "¿Ya sabes cómo llegar a FotoPop-up en Pradera Con…",
@@ -458,7 +666,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18124842472745087.jpg": "18124842472745087.mp4"
   },
-  "date": null
+  "date": "2026-08-03"
  },
  {
   "title": "Fotopop-up #1",
@@ -474,7 +682,7 @@ window.FOTOPOP_POSTS = [
   ],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-08-01"
  },
  {
   "title": "Your camera roll is about to get a lot pinker.",
@@ -489,7 +697,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "17960181240167726.jpg": "17960181240167726.mp4"
   },
-  "date": null
+  "date": "2026-07-30"
  },
  {
   "title": "get ready, new drop loading…",
@@ -503,7 +711,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-07-27"
  },
  {
   "title": "New look. White letters.",
@@ -523,7 +731,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-07-26"
  },
  {
   "title": "date idea: fotopop",
@@ -540,7 +748,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18116700082922390.jpg": "18116700082922390.mp4"
   },
-  "date": null
+  "date": "2026-07-24"
  },
  {
   "title": "Así es como encuentras tu alter ego en Fotopop.",
@@ -555,7 +763,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18135676516578469.jpg": "18135676516578469.mp4"
   },
-  "date": null
+  "date": "2026-07-22"
  },
  {
   "title": "Our color collection",
@@ -572,7 +780,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-07-19"
  },
  {
   "title": "Cómo llegar a Fotopop Majadas Once",
@@ -587,7 +795,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18122670892748532.jpg": "18122670892748532.mp4"
   },
-  "date": null
+  "date": "2026-07-16"
  },
  {
   "title": "Fotopop Majadas Once. Ya abierto.",
@@ -600,7 +808,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-07-14"
  },
  {
   "title": "pov: eligiendo tu fotita favorita con nuestro Soc…",
@@ -633,7 +841,7 @@ window.FOTOPOP_POSTS = [
    "18154004674433792.jpg": "18154004674433792.mp4",
    "18094478558058617.jpg": "18094478558058617.mp4"
   },
-  "date": null
+  "date": "2026-07-13"
  },
  {
   "title": "Oops, chat leaked.",
@@ -648,7 +856,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18012617792724108.jpg": "18012617792724108.mp4"
   },
-  "date": null
+  "date": "2026-07-09"
  },
  {
   "title": "how to fotopop: tutorial completo",
@@ -663,7 +871,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18107803432971828.jpg": "18107803432971828.mp4"
   },
-  "date": null
+  "date": "2026-07-06"
  },
  {
   "title": "¡Nos mudamos!",
@@ -680,7 +888,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18123209320683940.jpg": "18123209320683940.mp4"
   },
-  "date": null
+  "date": "2026-07-03"
  },
  {
   "title": "pov : vas al nuevo high angle rosa de Fotopop",
@@ -702,7 +910,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-07-02"
  },
  {
   "title": "Location 04 loading... ⏳",
@@ -718,7 +926,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "17910354870424946.jpg": "17910354870424946.mp4"
   },
-  "date": null
+  "date": "2026-06-29"
  },
  {
   "title": "Barbiecore lookbook: Hyper Pink edition.",
@@ -735,7 +943,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-06-24"
  },
  {
   "title": "Barbiecore, but make it hyper chic.",
@@ -754,7 +962,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18212307835337763.jpg": "18212307835337763.mp4"
   },
-  "date": null
+  "date": "2026-06-22"
  },
  {
   "title": "Blokecore: Un fashion aesthetic que transforma la…",
@@ -769,7 +977,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-06-18"
  },
  {
   "title": "HYPER PINK",
@@ -786,7 +994,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-06-16"
  },
  {
   "title": "Oficialmente empezó la soccer season.",
@@ -801,7 +1009,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18104602795805153.jpg": "18104602795805153.mp4"
   },
-  "date": null
+  "date": "2026-06-11"
  },
  {
   "title": "¡Los ganadores del [Ágape MM X Fotopop] BE THE NEX…",
@@ -818,7 +1026,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-06-08"
  },
  {
   "title": "Destination: Hyper Pink.",
@@ -833,7 +1041,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18102755879078891.jpg": "18102755879078891.mp4"
   },
-  "date": null
+  "date": "2026-06-06"
  },
  {
   "title": "HYPER PINK BOOTH OPEN",
@@ -848,7 +1056,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-06-05"
  },
  {
   "title": "NEW DROP : HYPER PINK",
@@ -861,7 +1069,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-06-04"
  },
  {
   "title": "Bring your BLOKECORE. Fotopop.",
@@ -876,7 +1084,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "17929414797101745.jpg": "17929414797101745.mp4"
   },
-  "date": null
+  "date": "2026-05-30"
  },
  {
   "title": "AVIA. PINK BOOTH. NEXT WEEK.",
@@ -891,7 +1099,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18469348768103503.jpg": "18469348768103503.mp4"
   },
-  "date": null
+  "date": "2026-05-26"
  },
  {
   "title": "Fotopop Soccer Season: OPEN",
@@ -924,7 +1132,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-05-22"
  },
  {
   "title": "This or That : Fotopop Edition",
@@ -939,7 +1147,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18092584586584713.jpg": "18092584586584713.mp4"
   },
-  "date": null
+  "date": "2026-05-18"
  },
  {
   "title": "Nuestras official models del Fotopop x Ágape Chal…",
@@ -956,7 +1164,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18044500439785708.jpg": "18044500439785708.mp4"
   },
-  "date": null
+  "date": "2026-05-16"
  },
  {
   "title": "Find Your Alter Ego at Fotopop.",
@@ -971,7 +1179,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18099700985105675.jpg": "18099700985105675.mp4"
   },
-  "date": null
+  "date": "2026-05-14"
  },
  {
   "title": "Don't be ridiculous. Everybody wants this",
@@ -987,7 +1195,7 @@ window.FOTOPOP_POSTS = [
   ],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-05-07"
  },
  {
   "title": "Lo que las mamás de verdad quieren este Día de la …",
@@ -1009,7 +1217,7 @@ window.FOTOPOP_POSTS = [
   ],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-05-06"
  },
  {
   "title": "\"Got it from my mom.\"",
@@ -1031,7 +1239,7 @@ window.FOTOPOP_POSTS = [
   ],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-05-05"
  },
  {
   "title": "La guía de poses que necesitabas para ganar el #B…",
@@ -1048,7 +1256,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18003905663865234.jpg": "18003905663865234.mp4"
   },
-  "date": null
+  "date": "2026-05-02"
  },
  {
   "title": "¿Lista para ser la próxima New Face?",
@@ -1068,7 +1276,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18146346427491751.jpg": "18146346427491751.mp4"
   },
-  "date": null
+  "date": "2026-04-27"
  },
  {
   "title": "Featured on Revista Femenina",
@@ -1085,7 +1293,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-04-24"
  },
  {
   "title": "Ágape MM X Fotopop",
@@ -1108,7 +1316,7 @@ window.FOTOPOP_POSTS = [
   ],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-04-21"
  },
  {
   "title": "Fotopop X Ágape MM",
@@ -1133,7 +1341,7 @@ window.FOTOPOP_POSTS = [
   ],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-04-21"
  },
  {
   "title": "Find Your Alter Ego,",
@@ -1148,7 +1356,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18119410762725218.jpg": "18119410762725218.mp4"
   },
-  "date": null
+  "date": "2026-04-21"
  },
  {
   "title": "Fotopop x Ágape MM",
@@ -1163,7 +1371,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18198534382348557.jpg": "18198534382348557.mp4"
   },
-  "date": null
+  "date": "2026-04-07"
  },
  {
   "title": "Fotopop x Ágape MM",
@@ -1176,7 +1384,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-04-05"
  },
  {
   "title": "Mis essentials para hoy",
@@ -1195,7 +1403,7 @@ window.FOTOPOP_POSTS = [
   ],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-04-01"
  },
  {
   "title": "We keep it clean.",
@@ -1210,7 +1418,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18040947209772166.jpg": "18040947209772166.mp4"
   },
-  "date": null
+  "date": "2026-03-29"
  },
  {
   "title": "Pure reflection",
@@ -1230,7 +1438,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-03-25"
  },
  {
   "title": "Not just a booth. It‘s a studio.",
@@ -1245,7 +1453,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18105714082867082.jpg": "18105714082867082.mp4"
   },
-  "date": null
+  "date": "2026-03-22"
  },
  {
   "title": "NEW DROP : B&W SIGNATURE",
@@ -1260,7 +1468,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "17853679014633368.jpg": "17853679014633368.mp4"
   },
-  "date": null
+  "date": "2026-03-18"
  },
  {
   "title": "NOW OPEN : INFINITE BLUE",
@@ -1275,7 +1483,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-03-13"
  },
  {
   "title": "Cómo llegar al High Angle Photo Booth en Tikal Fu…",
@@ -1290,7 +1498,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "17954341044092062.jpg": "17954341044092062.mp4"
   },
-  "date": null
+  "date": "2026-03-12"
  },
  {
   "title": "LUCKY DRAW EVENT : 100% WIN RATE",
@@ -1308,7 +1516,7 @@ window.FOTOPOP_POSTS = [
   ],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-03-09"
  },
  {
   "title": "INFINITE BLUE : Inspired by Casa Azul",
@@ -1331,7 +1539,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-03-08"
  },
  {
   "title": "Photobooth High Angle : Infinite Blue",
@@ -1348,7 +1556,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-03-06"
  },
  {
   "title": "Expanding the archive.",
@@ -1363,7 +1571,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18058290680389947.jpg": "18058290680389947.mp4"
   },
-  "date": null
+  "date": "2026-03-01"
  },
  {
   "title": "ARCHIVED",
@@ -1376,7 +1584,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-02-26"
  },
  {
   "title": "The very first high angle photo booth in Guatemal…",
@@ -1391,7 +1599,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18095733070791448.jpg": "18095733070791448.mp4"
   },
-  "date": null
+  "date": "2026-02-24"
  },
  {
   "title": "The foundation",
@@ -1413,7 +1621,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-02-20"
  },
  {
   "title": "system: reflective chronos",
@@ -1433,7 +1641,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-02-19"
  },
  {
   "title": "FOTOPOP 2026 Signature Frame Collection",
@@ -1452,7 +1660,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-02-18"
  },
  {
   "title": "GRAND OPENING. WE ARE OPEN",
@@ -1467,7 +1675,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-02-14"
  },
  {
   "title": "¿Cómo llegar a Fotopop?",
@@ -1482,7 +1690,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18108103516672125.jpg": "18108103516672125.mp4"
   },
-  "date": null
+  "date": "2026-02-13"
  },
  {
   "title": "Guía rápida para tu primera vez en Fotopop.",
@@ -1497,7 +1705,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "17911340928301078.jpg": "17911340928301078.mp4"
   },
-  "date": null
+  "date": "2026-02-12"
  },
  {
   "title": "¿Por qué conformarte con un selfie?",
@@ -1512,7 +1720,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "18095159047978292.jpg": "18095159047978292.mp4"
   },
-  "date": null
+  "date": "2026-02-10"
  },
  {
   "title": "Fotopop] OPENING SOON!",
@@ -1527,7 +1735,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "17876963412482090.jpg": "17876963412482090.mp4"
   },
-  "date": null
+  "date": "2026-02-08"
  },
  {
   "title": "Meet Reflective Chronos, our signature booth",
@@ -1542,7 +1750,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-02-01"
  },
  {
   "title": "High angle. Higher vibe",
@@ -1555,7 +1763,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-02-01"
  },
  {
   "title": "Life is a collection of fleeting seconds, most of…",
@@ -1570,7 +1778,7 @@ window.FOTOPOP_POSTS = [
   "videos": {
    "17993740523871948.jpg": "17993740523871948.mp4"
   },
-  "date": null
+  "date": "2026-02-01"
  },
  {
   "title": "¡Hola Guatemala!",
@@ -1583,7 +1791,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-01-30"
  },
  {
   "title": "Pop your color, Pop your vibe",
@@ -1596,7 +1804,7 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-01-30"
  },
  {
   "title": "Algo nuevo viene a Guate",
@@ -1609,6 +1817,6 @@ window.FOTOPOP_POSTS = [
   "tags": [],
   "type": "post",
   "videos": {},
-  "date": null
+  "date": "2026-01-30"
  }
 ];
