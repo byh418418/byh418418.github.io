@@ -39,11 +39,11 @@ fonts/            ← Aileron 폰트 넣는 자리 (아래 참고)
   1. 🔴🔵 Red+Blue — Majadas Once, Nivel 2
   2. 🔵 Blue — Paseo Cayalá, Edificio B1 Nivel 1 (22 calle 9-33, Zona 16) · 2026.09.12 오픈
   3. 🔴 Red — Vidēre, Nivel 2
-  4. 🩷 Pink — AVIA, Nivel 3
+  4. 🩷 Pink — Parque Las Américas, Nivel 2 (Zona 14) · 2026.11 AVIA에서 이전
   5. 🩷 Pink — La Estación, Nivel 2 (상설)
   > Tikal Futura(Planeta Maya) 지점은 2026.09.11 영업 종료 → Cayalá로 이전.
   > 지점이 바뀌면 **5군데를 같이** 고쳐야 함: booths 카드 / booths `[ N Locations ]` / intro `Locations` 숫자 / contact `N locations in Guatemala` / history 타임라인 `N ubicaciones`+목록.
-  > 폐점 이력: Tikal Futura(Planeta Maya) 2026.09.11 종료 → Cayalá 이전 · Pradera Concepción 팝업 2026.10 종료 → La Estación.
+  > 이전 이력: Tikal Futura(Planeta Maya) 2026.09.11 종료 → Cayalá · Pradera Concepción 팝업 2026.10 종료 → La Estación · AVIA 2026.11 종료 → Parque Las Américas.
   > 과거 지점 사진 포스트는 인스타 아카이브라 피드에 그대로 남겨둠.
 
 ## ⚠️ Aileron 폰트 넣기 (본문 폰트)

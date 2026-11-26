@@ -67,6 +67,10 @@ def make_title(caption):
 
 # ── 위치 추출 ───────────────────────────────────────────────────────────
 KNOWN = [
+    ('Parque Las Américas', 'Parque Las Américas'),
+    ('Parque Las Americas', 'Parque Las Américas'),
+    ('Las Américas', 'Parque Las Américas'),
+    ('Las Americas', 'Parque Las Américas'),
     # 'la ' 를 붙여야 "próxima estación" 같은 비유 표현에 오탐하지 않음
     ('La Estación', 'La Estación'),
     ('La Estacion', 'La Estación'),
@@ -110,7 +114,7 @@ def main():
     reels = json.load(open(os.path.join(MEDIA, 'reels.json'), encoding='utf-8'))['ig_reels_media']
 
     # 9월 작업 직전 백업을 기준으로 병합 (재실행 가능하도록)
-    base = os.path.join(SITE, '.backup-20261111', 'posts-data.js')
+    base = os.path.join(SITE, '.backup-20261126', 'posts-data.js')
     src = open(base if os.path.exists(base) else os.path.join(SITE, 'posts-data.js'),
                encoding='utf-8').read()
     old = json.loads(src[src.index('['):src.rindex(']') + 1])
